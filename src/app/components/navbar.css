@@ -1,0 +1,85 @@
+.navbar{
+    padding: 40px 24px;
+    display: flex;
+    gap: 370px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    margin: 0 auto;
+    height:  140px;
+    position: fixed;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    height: 40px;
+    width: auto;
+}
+
+.nav-links {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 86px;
+    padding: 12px 14px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Sliding background using ::before pseudo-element */
+.nav-links::before {
+    content: '';
+    position: absolute;
+    height: 36px;
+    border-radius: 86px;
+    background: white;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: 1;
+}
+
+/* Slide to Home (index 0) */
+.nav-links[data-active="0"]::before {
+    width: 70px;
+    left: 14px;
+}
+
+/* Slide to Workshops (index 1) */
+.nav-links[data-active="1"]::before {
+    width: 120px;
+    left: calc(14px + 70px + 60px);
+}
+
+/* Slide to Contact Us (index 2) */
+.nav-links[data-active="2"]::before {
+    width: 110px;
+    left: calc(14px + 70px + 60px + 120px + 60px);
+}
+
+.active-link, .inactive-link {
+    position: relative;
+    z-index: 2;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    text-decoration: none;
+    border-radius: 86px;
+    transition: color 0.3s ease;
+}
+
+.active-link {
+    color: black;
+}
+
+.inactive-link {
+    color: white;
+}
+
+
