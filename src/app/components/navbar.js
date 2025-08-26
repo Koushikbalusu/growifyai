@@ -17,17 +17,18 @@ export default function Navbar() {
         <nav className='navbar'>
             <div className='nav-logo'>
                 <Link href="/">
-                    <Image src="/logo.png" alt="Logo" width={50} height={50} />
+                    <Image className='logo' src="/Frame 2.png" alt="Logo" width={100} height={50} />
                 </Link>
             </div>
             <div className='nav-links' data-active={activeIndex}>
                 <Link href="/" className={pathname === "/" ? "active-link" : "inactive-link"}>Home</Link>
                 <Link href="/workshops" className={pathname === "/workshops" ? "active-link" : "inactive-link"}>Workshops</Link>
+                <Link href="learningresources" className={pathname === "/learningresources" ? "active-link" : "inactive-link"}>Learning Resources</Link>
+                <Link href="/explorehackatons" className={pathname === "/explorehackatons" ? "active-link" : "inactive-link"}>Explore Hackathons</Link>
                 <Link href="/contactus" className={pathname === "/contactus" ? "active-link" : "inactive-link"}>Contact Us</Link>
             </div>
             <div className='nav-login'>
-                <button className='login-button'>Login</button>
-                <button className='signup-button'>Sign Up</button>
+                <button className='register-button'>Register</button>
             </div>
         </nav>
     );

@@ -1,85 +1,69 @@
 .navbar{
-    padding: 40px 24px;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5vw;
     display: flex;
-    gap: 370px;
+    gap: 10vw;
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
     margin: 0 auto;
-    height:  140px;
+    height: 18vh;
     position: fixed;
 }
 
-.nav-logo {
-    display: flex;
-    align-items: center;
-}
-
-.nav-logo img {
-    height: 40px;
+.logo{
     width: auto;
+    height: 3.5vw;
 }
 
 .nav-links {
-    position: relative;
+    width: 47vw;
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 1vw;
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 86px;
-    padding: 12px 14px;
-    height: 60px;
+    padding: 1vw 1vw;
+    height: 3.5vw;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1vw;
 }
 
-/* Sliding background using ::before pseudo-element */
-.nav-links::before {
-    content: '';
-    position: absolute;
-    height: 36px;
-    border-radius: 86px;
-    background: white;
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-    z-index: 1;
-}
 
-/* Slide to Home (index 0) */
-.nav-links[data-active="0"]::before {
-    width: 70px;
-    left: 14px;
-}
-
-/* Slide to Workshops (index 1) */
-.nav-links[data-active="1"]::before {
-    width: 120px;
-    left: calc(14px + 70px + 60px);
-}
-
-/* Slide to Contact Us (index 2) */
-.nav-links[data-active="2"]::before {
-    width: 110px;
-    left: calc(14px + 70px + 60px + 120px + 60px);
-}
+/* Removed gliding effect. Active link will be styled simply. */
 
 .active-link, .inactive-link {
-    position: relative;
-    z-index: 2;
-    height: 36px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 0.8vw;
     text-decoration: none;
     border-radius: 86px;
     transition: color 0.3s ease;
+    height: 2vw;
+    width: auto;
 }
 
 .active-link {
     color: black;
+    background: white;
 }
 
 .inactive-link {
     color: white;
 }
 
+
+.register-button {
+    height: 3.5vw;
+    width: 7vw;
+    padding: 1vw;
+    background-image: linear-gradient(180deg, #0D75A7 18%, #052E41 100%);
+    border-radius: 4vw;
+    font-weight: bold;
+    font-size: 1vw;
+    border-color: white;
+    border-width: 1px;
+}
 
