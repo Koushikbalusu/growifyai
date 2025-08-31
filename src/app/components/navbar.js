@@ -58,8 +58,8 @@ export default function Navbar() {
           Explore Hackathons
         </Link>
         <Link
-          // href="/contactus"
-          href="#aboutus"
+          href="/contactus"
+          // href="#aboutus"
           className={
             pathname === "/contactus" ? "active-link" : "inactive-link"
           }

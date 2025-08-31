@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "AI for Beginners",
+    "description": "An introduction to artificial intelligence and its applications.",
+    "image": "/images/ai-beginner.png"
+  },
+  {
+    "id": 2,
+    "title": "Machine Learning",
+    "description": "Learn the fundamentals of machine learning algorithms.",
+    "image": "/images/machine-learning.png"
+  },
+  {
+    "id": 3,
+    "title": "Deep Learning",
+    "description": "Explore deep neural networks and their applications.",
+    "image": "/images/deep-learning.png"
+  },
+  {
+    "id": 4,
+    "title": "Natural Language Processing",
+    "description": "Understand how machines process and generate human language.",
+    "image": "/images/nlp.png"
+  },
+  {
+    "id": 5,
+    "title": "AI Ethics",
+    "description": "Discuss ethical considerations in AI development and deployment.",
+    "image": "/images/ai-ethics.png"
+  },
+  {
+    "id": 6,
+    "title": "AI in Robotics",
+    "description": "Learn how AI is applied in robotics and automation.",
+    "image": "/images/ai-robotics.png"
+  }
+]

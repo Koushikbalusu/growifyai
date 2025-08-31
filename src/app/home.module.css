@@ -1,13 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Overpass+Mono:wght@300..700&display=swap");
-.container{
-        background-image: linear-gradient(to right,black 0%,black 35%,  #083c56 100%);
-        height: auto;
+.container {
+  background-image: linear-gradient(
+    to right,
+    black 0%,
+    black 35%,
+    #083c56 100%
+  );
+  height: auto;
 }
 .herosection {
   position: relative;
   height: 100vh;
   width: 100%;
-  border-bottom: 2px solid white;
+  /* border-bottom: 2px solid white; */
 }
 
 .hero_text {
@@ -91,7 +96,7 @@
   position: relative;
   height: 100vh;
   width: 100%;
-  border-bottom: 2px solid white;
+  /* border-bottom: 2px solid white; */
 }
 
 .aboutus_text {
@@ -128,10 +133,10 @@
   height: auto;
 }
 .ourmissionsection {
-  position: relative  ;
+  position: relative;
   height: 100vh;
   width: 100%;
-  border-bottom: 2px solid white;
+  /* border-bottom: 2px solid white; */
 }
 .ourmission_text1 {
   position: absolute;
@@ -156,7 +161,7 @@
   line-height: 1.6;
   font-family: outfit, monospace;
 }
-.ourmission_text2{
+.ourmission_text2 {
   position: absolute;
   top: 60%;
   left: 10%;
@@ -167,14 +172,14 @@
   align-items: center;
   text-align: center;
 }
-.ourmission_heading2{
+.ourmission_heading2 {
   font-size: 3.5vw;
   font-weight: 600;
   color: white;
   line-height: 1.4;
   font-family: outfit, monospace;
 }
-.ourmission_para2{
+.ourmission_para2 {
   font-size: 1.5vw;
   font-weight: 300;
   color: rgb(152, 152, 152);

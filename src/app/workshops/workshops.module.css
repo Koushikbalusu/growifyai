@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Overpass+Mono:wght@300..700&display=swap");
+.container {
+  background-image: linear-gradient(
+    to right,
+    black 0%,
+    black 35%,
+    #083c56 100%
+  );
+  height: auto;
+}
+.heading_section {
+  position: relative;
+  height: 40vh;
+  width: 100%;
+  text-align: center;
+}
+.heading {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3vw;
+  font-weight: 200;
+  color: white;
+  font-family: outfit, monospace;
+}
+.heading_special {
+  color: #0d75a7;
+}
+.workshops_section {
+  position: relative;
+  height: 200vh;
+  width: 100%;
+}
+.workshops_list {
+    position: absolute;
+    top: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10vw;
+    padding: 3vw;
+}
